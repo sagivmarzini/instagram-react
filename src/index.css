@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: lightgray;
+  width: 100vw;
+  /* height: 100vh; */
+  display: grid;
+  place-items: center;
+}
+
+.slide-indicator.active {
+  background-color: rgb(59 130 246);
+  /* Tailwind's blue-500 */
+  opacity: 1;
+}
+
+/* Hide scrollbar but allow scrolling for Webkit browsers (Chrome, Safari) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+/* For Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+  /* Hide scrollbar */
+}
+
+/* General */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  overflow: scroll;
+  /* still allow scrolling */
+}
