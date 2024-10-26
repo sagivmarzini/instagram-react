@@ -7,7 +7,7 @@ import Post from "./Components/Post";
 import { formatDate } from "./utils/utils";
 
 const App: React.FC = () => {
-  const [stories, setStories] = useState<StoryType[]>([
+  const [stories] = useState<StoryType[]>([
     {
       id: "1",
       username: "Your Story",
